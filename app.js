@@ -10,57 +10,91 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const featuresGrid = document.getElementById("features-grid");
-  if (featuresGrid && siteContent.features) {
-    featuresGrid.innerHTML = siteContent.features
-      .map(
-        (f) => `
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition group">
-        <div class="text-4xl mb-4">${f.icon}</div>
-        <h3 class="text-xl font-semibold text-dark mb-3 group-hover:text-primary transition">${f.title}</h3>
-        <p class="text-gray-600">${f.desc}</p>
-      </div>
-    `
-      )
-      .join("");
-  }
 
-  const benefitsGrid = document.getElementById("benefits-grid");
-  if (benefitsGrid && siteContent.benefits) {
-    benefitsGrid.innerHTML = siteContent.benefits
-      .map(
-        (b) => `
-      <div class="flex items-start p-6 bg-gray-50 rounded-xl">
-        <span class="text-3xl mr-4">${b.icon}</span>
-        <div>
-          <h3 class="font-semibold text-dark mb-1">${b.title}</h3>
-          <p class="text-gray-600 text-sm">${b.desc}</p>
+if (featuresGrid && siteContent.features) {
+  featuresGrid.innerHTML = siteContent.features
+    .map((f) => {
+      const isImage = f.icon.includes("/");
+
+      return `
+        <div class="group bg-white p-6 rounded-2xl hover:shadow-md transition text-center">
+          
+          <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-xl bg-primary/10">
+            ${
+              isImage
+                ? `<img src="${f.icon}" alt="${f.title}" class="w-8 h-8 object-contain" />`
+                : `<span class="text-2xl">${f.icon}</span>`
+            }
+          </div>
+
+          <h3 class="font-semibold text-dark mb-2">
+            ${f.title}
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            ${f.desc}
+          </p>
         </div>
-      </div>
-    `
-      )
-      .join("");
-  }
+      `;
+    })
+    .join("");
+}
+
+const benefitsGrid = document.getElementById("benefits-grid");
+
+if (benefitsGrid && siteContent.benefits) {
+  benefitsGrid.innerHTML = siteContent.benefits
+    .map((b) => {
+      const isImage = b.icon.includes("/");
+
+      return `
+        <div class="group bg-gray-50 p-6 rounded-2xl hover:shadow-md transition">
+          
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10">
+              ${
+                isImage
+                  ? `<img src="${b.icon}" alt="${b.title}" class="w-6 h-6 object-contain" />`
+                  : `<span class="text-primary text-2xl">${b.icon}</span>`
+              }
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-dark mb-1">
+                ${b.title}
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                ${b.desc}
+              </p>
+            </div>
+          </div>
+
+        </div>
+      `;
+    })
+    .join("");
+}
+
 
   const testimonialsGrid = document.getElementById("testimonials-grid");
   if (testimonialsGrid && siteContent.testimonials) {
     testimonialsGrid.innerHTML = siteContent.testimonials
       .map(
         (t) => `
-      <div class="bg-gray-50 p-8 rounded-2xl">
+      <div class="bg-gray-100 p-8 rounded-2xl">
         <p class="text-gray-600 mb-6 italic text-left leading-relaxed">"${t.text}"</p>
-    <div class="flex items-center gap-4 mt-4">
-  <img
-    src="${t.image}"
-    alt="${t.name}"
-    onerror="this.src='https://via.placeholder.com/100?text=User'"
-    class="w-14 h-14 rounded-full object-cover"
-  />
-
-  <div class="leading-tight">
-    <p class="font-semibold text-dark">${t.name}</p>
-    <p class="text-sm text-gray-500">${t.role}</p>
+       <div class="flex items-center gap-4 mt-10">
+     <img
+     src="${t.image}"
+     alt="${t.name}"
+     onerror="this.src='https://via.placeholder.com/100?text=User'"
+     class="w-14 h-14 rounded-full object-cover"
+    />
+        
+    <div class="leading-tight">
+     <p class="font-semibold text-dark">${t.name}</p>
+     <p class="text-sm text-gray-500">${t.role}</p>
+    </div>
   </div>
-</div>
       </div>
     `
       )

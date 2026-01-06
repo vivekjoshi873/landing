@@ -16,7 +16,9 @@
           colors: {
             primary: '#008080',
             secondary: '#E67E22',
+            tertiary: '#F59E0B',
             dark: '#333333',
+
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
@@ -43,6 +45,7 @@
       <div class="flex justify-between items-center h-16">
         <a href="#" class="text-2xl font-bold text-primary" id="nav-logo">AI Elevates</a>
         <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-dark hover:text-primary transition">Home</a>
           <a href="#features" class="text-dark hover:text-primary transition">Features</a>
           <a href="#benefits" class="text-dark hover:text-primary transition">Benefits</a>
           <a href="#pricing" class="text-dark hover:text-primary transition">Pricing</a>
@@ -72,7 +75,7 @@
   <section id="hero" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-gray-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-10 h-[40vh] flex flex-col justify-center">
       <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark leading-tight mb-6">Smarter
-        Systems. <span class="text-primary">Greater Freedom.</span></h1>
+        Systems. <span class="text-primary">Greater Freedom</span></h1>
       <p id="hero-subtitle" class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10">AI Elevates helps business
         owners use AI and automation to reclaim time, reduce dropped balls, and run smoother operations-without needing
         to become "tech people."</p>
@@ -90,25 +93,25 @@
     </div>
   </section>
 
-  <section id="problem" class="py-16 md:py-24 bg-white">
+  <section id="problem" class="py-16 md:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Sound Familiar?</h2>
           <ul class="space-y-4 text-lg text-gray-600">
-            <li class="flex items-start"><span class="text-secondary mr-3 text-2xl">✗</span>Overwhelmed with tasks that
+            <li class="flex items-start"><span class="text-secondary mr-3 text-xl">✗</span>Overwhelmed with tasks that
               never end</li>
-            <li class="flex items-start"><span class="text-secondary mr-3 text-2xl">✗</span>Losing leads because no one
+            <li class="flex items-start"><span class="text-secondary mr-3 text-xl">✗</span>Losing leads because no one
               followed up</li>
-            <li class="flex items-start"><span class="text-secondary mr-3 text-2xl">✗</span>Manually chasing every
+            <li class="flex items-start"><span class="text-secondary mr-3 text-xl">✗</span>Manually chasing every
               inquiry</li>
-            <li class="flex items-start"><span class="text-secondary mr-3 text-2xl">✗</span>Stuck being the bottleneck
+            <li class="flex items-start"><span class="text-secondary mr-3 text-xl">✗</span>Stuck being the bottleneck
               in your own business</li>
           </ul>
         </div>
         <div class="bg-gradient-to-br from-primary/5 to-primary/10 p-8 rounded-2xl">
-          <h3 class="text-2xl font-bold text-primary mb-4">There's a Better Way</h3>
-          <p class="text-lg text-gray-600">AI Elevates solves this with smart automation that works quietly in the
+          <h3 class="text-3xl font-bold text-primary mb-4">There's a Better Way</h3>
+          <p class="text-base text-gray-600">AI Elevates solves this with smart automation that works quietly in the
             background-handling conversations, booking appointments, and following up while you focus on what matters
             most.</p>
         </div>
@@ -116,16 +119,16 @@
     </div>
   </section>
 
-  <section id="features" class="py-16 md:py-24 bg-gray-50">
+  <section id="features" class="py-16 md:py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-4">What AI Elevates Does for You</h2>
       <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Powerful AI tools designed to streamline your
         operations</p>
-      <div id="features-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+      <div id="features-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center"></div>
     </div>
   </section>
 
-  <section id="benefits" class="py-16 md:py-24 bg-white">
+  <section id="benefits" class="py-16 md:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-4">Why Businesses Choose AI Elevates</h2>
       <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Real results that transform how you operate
@@ -134,17 +137,15 @@
     </div>
   </section>
 
-  <section id="how-it-works" class="py-16 md:py-24 bg-gray-50">
+  <section id="how-it-works" class="py-16 md:py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-12">
         How It Works
       </h2>
 
       <div class="relative">
-        <!-- Line from step 1 → step 3 -->
         <div class="hidden md:block absolute top-8 h-0.5 bg-primary/30" style="left: 16.66%; right: 16.66%;"></div>
 
-        <!-- Steps -->
         <div class="grid md:grid-cols-3 gap-8 relative z-10">
           <div class="text-center">
             <div
@@ -191,14 +192,14 @@
 
 
 
-  <section id="testimonials" class="py-16 md:py-24 bg-white">
+  <section id="testimonials" class="py-16 md:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-12">Trusted by Business Owners</h2>
       <div id="testimonials-grid" class="flex gap-8 overflow-x-auto max-w-7xl mx-auto pb-4"></div>
     </div>
   </section>
 
-  <section id="pricing" class="py-16 md:py-24 bg-gray-50">
+  <section id="pricing" class="py-16 md:py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-4">Simple, Transparent Pricing</h2>
       <p class="text-lg text-gray-600 text-center mb-12">Choose the plan that fits your business</p>
@@ -206,7 +207,7 @@
     </div>
   </section>
 
-  <section id="cta" class="py-16 md:py-24 gradient-bg">
+  <section id="cta" class="py-16 md:py-20 gradient-bg">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to reclaim your time and simplify your business
         with AI?</h2>
@@ -225,8 +226,7 @@
     </div>
   </section>
 
-  <!-- Booking -->
-  <section id="booking" class="py-16 md:py-24 bg-white">
+  <section id="booking" class="py-16 md:py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Book Your Demo</h2>
       <p class="text-lg text-gray-600 mb-8">Schedule a call with our team to see AI Elevates in action.</p>
@@ -241,7 +241,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer id="contact" class="bg-dark text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-8">
@@ -257,9 +256,9 @@
         <div>
           <h4 class="font-semibold mb-4">Follow Us</h4>
           <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-primary transition">Instagram</a>
-            <a href="#" class="text-gray-400 hover:text-primary transition">Facebook</a>
-            <a href="#" class="text-gray-400 hover:text-primary transition">LinkedIn</a>
+            <a href="https://www.instagram.com/aielevates" class="text-gray-400 hover:text-primary transition">Instagram</a>
+            <a href="https://www.facebook.com/" class="text-gray-400 hover:text-primary transition">Facebook</a>
+            <a href="https://www.linkedin.com/company/ai-elevates/" class="text-gray-400 hover:text-primary transition">LinkedIn</a>
           </div>
         </div>
       </div>

@@ -23,32 +23,32 @@ const siteContent = {
 
   features: [
     {
-      icon: "🎙️",
+      icon: "/icons/mic.png",
       title: "Human-like AI Voice Agents",
       desc: "Natural conversations that feel real and build trust with your clients.",
     },
     {
-      icon: "🎯",
+      icon: "/icons/goal.png",
       title: "Lead Qualification & Automated Follow-up",
       desc: "Never miss a lead with instant, intelligent follow-up sequences.",
     },
     {
-      icon: "📅",
+      icon: "/icons/appointment.png",
       title: "Appointment Booking + CRM Sync",
       desc: "Seamless scheduling that syncs directly with your calendar and CRM.",
     },
     {
-      icon: "🌍",
+      icon: "/icons/worldwide.png",
       title: "Multi-language Support",
       desc: "Serve clients in their preferred language automatically.",
     },
     {
-      icon: "⏰",
+      icon: "/icons/alram.png",
       title: "24/7 Availability",
       desc: "Your AI assistant never sleeps, ensuring you never miss an opportunity.",
     },
     {
-      icon: "🤖",
+      icon: "/icons/robot.png",
       title: "Chatbots, AI Integrations & Automations",
       desc: "Custom automations tailored to your specific business needs.",
     },
@@ -56,32 +56,32 @@ const siteContent = {
 
   benefits: [
     {
-      icon: "⏱️",
+      icon: "/icons/alram.png",
       title: "Reclaim Time",
       desc: "Get hours back in your day for what matters most.",
     },
     {
-      icon: "📈",
+      icon: "/icons/bar-chart.png",
       title: "Reduce Dropped Leads",
       desc: "Every inquiry gets immediate attention and follow-up.",
     },
     {
-      icon: "🔄",
+      icon: "/icons/loop.png",
       title: "Remove Manual Follow-ups",
       desc: "Automated sequences handle the repetitive work.",
     },
     {
-      icon: "💰",
+      icon: "/icons/lowest-price.png",
       title: "Increase Conversions",
       desc: "Faster response times mean more closed deals.",
     },
     {
-      icon: "📊",
+      icon: "/icons/unbalanced.png",
       title: "Scale Without Hiring",
       desc: "Grow your business without growing your headcount.",
     },
     {
-      icon: "✨",
+      icon: "/icons/star-regular-full.png",
       title: "Automation Without Intimidation",
       desc: "Simple, approachable AI that just works.",
     },
