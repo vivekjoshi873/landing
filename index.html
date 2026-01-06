@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="AI Elevates helps business owners use AI and automation to reclaim time, reduce dropped balls, and run smoother operations.">
+  <title>AI Elevates | Smarter Systems. Greater Freedom.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#008080',
+            secondary: '#E67E22',
+            dark: '#333333',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #008080 0%, #006666 100%);
+    }
+  </style>
+</head>
+
+<body class="font-sans text-dark bg-white">
+
+  <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="#" class="text-2xl font-bold text-primary" id="nav-logo">AI Elevates</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#features" class="text-dark hover:text-primary transition">Features</a>
+          <a href="#benefits" class="text-dark hover:text-primary transition">Benefits</a>
+          <a href="#pricing" class="text-dark hover:text-primary transition">Pricing</a>
+          <a href="#contact" class="text-dark hover:text-primary transition">Contact</a>
+        </div>
+        <a href="#booking"
+          class="hidden md:inline-block bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition">Book
+          Demo</a>
+        <button id="mobile-menu-btn" class="md:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-3 space-y-3">
+        <a href="#features" class="block text-dark hover:text-primary">Features</a>
+        <a href="#benefits" class="block text-dark hover:text-primary">Benefits</a>
+        <a href="#pricing" class="block text-dark hover:text-primary">Pricing</a>
+        <a href="#contact" class="block text-dark hover:text-primary">Contact</a>
+        <a href="#booking" class="block bg-secondary text-white px-4 py-2 rounded-lg text-center">Book Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-10 h-[40vh] flex flex-col justify-center">
+      <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark leading-tight mb-6">Smarter
+        Systems. <span class="text-primary">Greater Freedom.</span></h1>
+      <p id="hero-subtitle" class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10">AI Elevates helps business
+        owners use AI and automation to reclaim time, reduce dropped balls, and run smoother operations-without needing
+        to become "tech people."</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#booking"
+          class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">Book
+          Demo</a>
+        <a href="#pricing"
+          class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">Start
+          Free Trial</a>
+        <a href="#contact"
+          class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition">Speak
+          to an AI Expert</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="problem" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Sound Familiar?</h2>
+          <ul class="space-y-4 text-lg text-gray-600">
+            <li class="flex items-start"><span class="text-secondary mr-3 text-2xl">✗</span>Overwhelmed with tasks that
+              never end</li>
+            <li class="flex items-start"><span class="text-secondary mr-3 text-2xl">✗</span>Losing leads because no one
+              followed up</li>
+            <li class="flex items-start"><span class="text-secondary mr-3 text-2xl">✗</span>Manually chasing every
+              inquiry</li>
+            <li class="flex items-start"><span class="text-secondary mr-3 text-2xl">✗</span>Stuck being the bottleneck
+              in your own business</li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-primary/5 to-primary/10 p-8 rounded-2xl">
+          <h3 class="text-2xl font-bold text-primary mb-4">There's a Better Way</h3>
+          <p class="text-lg text-gray-600">AI Elevates solves this with smart automation that works quietly in the
+            background-handling conversations, booking appointments, and following up while you focus on what matters
+            most.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-4">What AI Elevates Does for You</h2>
+      <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Powerful AI tools designed to streamline your
+        operations</p>
+      <div id="features-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+
+  <section id="benefits" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-4">Why Businesses Choose AI Elevates</h2>
+      <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Real results that transform how you operate
+      </p>
+      <div id="benefits-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-12">
+        How It Works
+      </h2>
+
+      <div class="relative">
+        <!-- Line from step 1 → step 3 -->
+        <div class="hidden md:block absolute top-8 h-0.5 bg-primary/30" style="left: 16.66%; right: 16.66%;"></div>
+
+        <!-- Steps -->
+        <div class="grid md:grid-cols-3 gap-8 relative z-10">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              1
+            </div>
+            <h3 class="text-xl font-semibold mb-2">
+              We Set Up Your AI Systems
+            </h3>
+            <p class="text-gray-600">
+              Our team configures everything based on your business needs.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              2
+            </div>
+            <h3 class="text-xl font-semibold mb-2">
+              AI Handles the Work
+            </h3>
+            <p class="text-gray-600">
+              AI manages conversations, follow-ups, and booking automatically.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              3
+            </div>
+            <h3 className="text-xl font-semibold mb-2">
+              You Focus on Growth
+            </h3>
+            <p class="text-gray-600">
+              While AI runs in the background, you focus on what matters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="testimonials" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-12">Trusted by Business Owners</h2>
+      <div id="testimonials-grid" class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"></div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-4">Simple, Transparent Pricing</h2>
+      <p class="text-lg text-gray-600 text-center mb-12">Choose the plan that fits your business</p>
+      <div id="pricing-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+
+  <section id="cta" class="py-16 md:py-24 gradient-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to reclaim your time and simplify your business
+        with AI?</h2>
+      <p class="text-xl text-white/90 mb-10">Let's get started today.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#booking"
+          class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition">Book
+          Demo</a>
+        <a href="#pricing"
+          class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition">Start
+          Free Trial</a>
+        <a href="#contact"
+          class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition">Speak
+          to an AI Expert</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Book Your Demo</h2>
+      <p class="text-lg text-gray-600 mb-8">Schedule a call with our team to see AI Elevates in action.</p>
+      <div class="bg-gray-100 rounded-2xl p-8 min-h-[400px] flex items-center justify-center">
+        <div>
+          <p class="text-gray-600 mb-4">Calendar booking will appear here</p>
+          <a href="https://cal.com/" target="_blank"
+            class="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition">Open
+            Booking Calendar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold text-primary mb-4">AI Elevates</h3>
+          <p class="text-gray-400">Helping business owners use AI and automation to work smarter.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <p class="text-gray-400 mb-2">Email: info@ai-elevates.com</p>
+          <p class="text-gray-400">Phone: +1-844-628-9800</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-primary transition">Instagram</a>
+            <a href="#" class="text-gray-400 hover:text-primary transition">Facebook</a>
+            <a href="#" class="text-gray-400 hover:text-primary transition">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2026 AI Elevates. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
