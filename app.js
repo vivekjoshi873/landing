@@ -47,16 +47,20 @@ document.addEventListener("DOMContentLoaded", () => {
       .map(
         (t) => `
       <div class="bg-gray-50 p-8 rounded-2xl">
-        <p class="text-gray-600 mb-6 italic">"${t.text}"</p>
-        <div class="flex items-center">
-          <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold mr-4">${t.name.charAt(
-            0
-          )}</div>
-          <div>
-            <p class="font-semibold text-dark">${t.name}</p>
-            <p class="text-sm text-gray-500">${t.role}</p>
-          </div>
-        </div>
+        <p class="text-gray-600 mb-6 italic text-left leading-relaxed">"${t.text}"</p>
+    <div class="flex items-center gap-4 mt-4">
+  <img
+    src="${t.image}"
+    alt="${t.name}"
+    onerror="this.src='https://via.placeholder.com/100?text=User'"
+    class="w-14 h-14 rounded-full object-cover"
+  />
+
+  <div class="leading-tight">
+    <p class="font-semibold text-dark">${t.name}</p>
+    <p class="text-sm text-gray-500">${t.role}</p>
+  </div>
+</div>
       </div>
     `
       )

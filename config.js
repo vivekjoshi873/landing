@@ -97,7 +97,14 @@ const siteContent = {
     {
       name: "Tom Leonard",
       role: "Farm Market Owner",
-      text: "Running a farm market means I'm hands-on all day. Having AI handle customer questions and orders has freed me up to focus on what I do best—growing great produce and serving my community.",
+      text: "Running a farm market means I'm hands-on all day. Having AI handle customer questions and orders has freed me up to focus on what I do best-growing great produce and serving my community.",
+      image: "images/photo2.avif",
+    },
+    {
+      name: "David Brooks",
+      role: "Marketing Consultant",
+      text: "Before AI Elevates, I was constantly juggling client calls, follow-ups, and admin work. Now everything runs in the background. Leads are handled instantly, and my calendar stays full without me chasing anyone.",
+      image: "images/photo3.avif",
     },
   ],
 
