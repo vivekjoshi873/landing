@@ -27,10 +27,10 @@ if (featuresGrid && siteContent.features) {
             }
           </div>
 
-          <h3 class="font-semibold text-dark mb-2">
+          <h3 class="font-semibold text-dark mb-2 text-lg">
             ${f.title}
           </h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
+          <p class="text-gray-600 text-sm leading-relaxed ">
             ${f.desc}
           </p>
         </div>
@@ -59,7 +59,7 @@ if (benefitsGrid && siteContent.benefits) {
             </div>
 
             <div>
-              <h3 class="font-semibold text-dark mb-1">
+              <h3 class="font-semibold text-dark mb-1 text-lg">
                 ${b.title}
               </h3>
               <p class="text-gray-600 text-sm leading-relaxed">
@@ -106,7 +106,7 @@ if (benefitsGrid && siteContent.benefits) {
     pricingGrid.innerHTML = siteContent.pricing
       .map(
         (p) => `
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition ${
+      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition text-center ${
         p.popular ? "ring-2 ring-primary relative" : ""
       }">
         ${
@@ -114,16 +114,16 @@ if (benefitsGrid && siteContent.benefits) {
             ? '<span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-xs px-3 py-1 rounded-full">Most Popular</span>'
             : ""
         }
-        <h3 class="text-xl font-bold text-dark mb-2">${p.name}</h3>
-        <div class="mb-4">
+        <h3 class="text-xl font-bold text-dark mb-2 text-center">${p.name}</h3>
+        <div class="mb-4 text-center ">
           <span class="text-3xl font-bold text-primary">${p.price}</span>
-          <span class="text-gray-500">${p.period}</span>
+          <span class="text-gray-500 ">${p.period}</span>
         </div>
         <ul class="space-y-2 mb-6">
           ${p.features
             .map(
               (f) =>
-                `<li class="flex items-center text-sm text-gray-600"><svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>${f}</li>`
+                `<li class="flex ml-8 items-center text-sm text-gray-600"><svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>${f}</li>`
             )
             .join("")}
         </ul>
