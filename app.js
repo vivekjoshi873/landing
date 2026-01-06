@@ -27,10 +27,10 @@ if (featuresGrid && siteContent.features) {
             }
           </div>
 
-          <h3 class="font-semibold text-dark mb-2 text-lg">
+          <h3 class="font-bold text-dark mb-2 text-lg ">
             ${f.title}
           </h3>
-          <p class="text-gray-600 text-sm leading-relaxed ">
+          <p class="text-gray-600 text-sm leading-relaxed text-[17px] font-semibold">
             ${f.desc}
           </p>
         </div>
@@ -59,10 +59,10 @@ if (benefitsGrid && siteContent.benefits) {
             </div>
 
             <div>
-              <h3 class="font-semibold text-dark mb-1 text-lg">
+              <h3 class="font-extrabold text-dark mb-1 text-lg">
                 ${b.title}
               </h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
+              <p class="text-gray-600 text-sm leading-relaxed text-[17px] font-semibold">
                 ${b.desc}
               </p>
             </div>
@@ -123,7 +123,7 @@ if (benefitsGrid && siteContent.benefits) {
           ${p.features
             .map(
               (f) =>
-                `<li class="flex ml-9 items-center text-sm text-gray-600"><svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>${f}</li>`
+                `<li class="flex ml-4 text-[15px]  items-center text-sm text-gray-600"><svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>${f}</li>`
             )
             .join("")}
         </ul>
