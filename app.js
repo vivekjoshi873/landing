@@ -81,7 +81,7 @@ if (benefitsGrid && siteContent.benefits) {
       .map(
         (t) => `
       <div class="bg-gray-100 p-8 rounded-2xl">
-        <p class="text-gray-600 mb-6 italic text-left leading-relaxed">"${t.text}"</p>
+        <p class="text-gray-600 mb-6 italic text-left leading-relaxed text-[17px] font-semibold">"${t.text}"</p>
        <div class="flex items-center gap-4 mt-10">
      <img
      src="${t.image}"
@@ -114,7 +114,7 @@ if (benefitsGrid && siteContent.benefits) {
             ? '<span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-xs px-3 py-1 rounded-full">Most Popular</span>'
             : ""
         }
-        <h3 class="text-2xl font-bold text-dark mb-2 text-center">${p.name}</h3>
+        <h3 class="text-3xl font-bold text-dark mb-3 text-center">${p.name}</h3>
         <div class="mb-4 text-center mr-2">
           <span class="text-3xl font-bold text-primary">${p.price}</span>
           <span class="text-gray-500 ">${p.period}</span>
