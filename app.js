@@ -91,8 +91,8 @@ if (benefitsGrid && siteContent.benefits) {
     />
         
     <div class="leading-tight">
-     <p class="font-semibold text-dark">${t.name}</p>
-     <p class="text-sm text-gray-500">${t.role}</p>
+     <p class="font-bold text-dark">${t.name}</p>
+     <p class="text-base font-semibold text-gray-500">${t.role}</p>
     </div>
   </div>
       </div>
