@@ -1,552 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="AI Elevates helps business owners use AI and automation to reclaim time, reduce dropped balls, and run smoother operations."
-    />
-    <title>AI Elevates | Smarter Systems. Greater Freedom.</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#008080",
-              secondary: "#E67E22",
-              tertiary: "#F59E0B",
-              dark: "#333333",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="AI Elevates helps business owners use AI and automation to reclaim time, reduce dropped balls, and run smoother operations." />
+  <title>AI Elevates | Smarter Systems. Greater Freedom.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#008080",
+            secondary: "#E67E22",
+            tertiary: "#F59E0B",
+            dark: "#333333",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
           },
         },
-      };
-    </script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-      .gradient-bg {
-        background: linear-gradient(135deg, #008080 0%, #006666 100%);
-      }
-    </style>
-  </head>
+    .gradient-bg {
+      background: linear-gradient(135deg, #008080 0%, #006666 100%);
+    }
+  </style>
+</head>
 
-  <body class="font-sans text-dark bg-white">
-    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <a href="#" class="text-2xl font-bold text-primary" id="nav-logo"
-            >AI Elevates</a
-          >
-          <div class="hidden md:flex space-x-8">
-            <a href="#hero" class="text-dark hover:text-primary transition"
-              >Home</a
-            >
-            <a href="#features" class="text-dark hover:text-primary transition"
-              >Features</a
-            >
-            <a href="#benefits" class="text-dark hover:text-primary transition"
-              >Benefits</a
-            >
-            <a href="#pricing" class="text-dark hover:text-primary transition"
-              >Pricing</a
-            >
-            <a href="#contact" class="text-dark hover:text-primary transition"
-              >Contact</a
-            >
-          </div>
-          <a
-            href="https://calendly.com/"
-            class="bg-dark text-white hover:bg-black hidden md:inline-block px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition"
-            >Book Demo</a
-          >
-          <button id="mobile-menu-btn" class="md:hidden p-2">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+<body class="font-sans text-dark bg-white">
+  <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="#" class="text-2xl font-bold text-primary" id="nav-logo">AI Elevates</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#hero" class="text-dark hover:text-primary transition">Home</a>
+          <a href="#features" class="text-dark hover:text-primary transition">Features</a>
+          <a href="#benefits" class="text-dark hover:text-primary transition">Benefits</a>
+          <a href="#pricing" class="text-dark hover:text-primary transition">Pricing</a>
+          <a href="#contact" class="text-dark hover:text-primary transition">Contact</a>
         </div>
+        <a href="https://calendly.com/"
+          class="bg-dark text-white hover:bg-black hidden md:inline-block px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition">Book
+          Demo</a>
+        <button id="mobile-menu-btn" class="md:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-        <div class="px-4 py-3 space-y-3">
-          <a href="#features" class="block text-dark hover:text-primary"
-            >Features</a
-          >
-          <a href="#benefits" class="block text-dark hover:text-primary"
-            >Benefits</a
-          >
-          <a href="#pricing" class="block text-dark hover:text-primary"
-            >Pricing</a
-          >
-          <a href="#contact" class="block text-dark hover:text-primary"
-            >Contact</a
-          >
-          <a
-            href="https://calendly.com/"
-            class="block bg-secondary text-white px-4 py-2 rounded-lg text-center"
-            >Book Demo</a
-          >
-        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-3 space-y-3">
+        <a href="#features" class="block text-dark hover:text-primary">Features</a>
+        <a href="#benefits" class="block text-dark hover:text-primary">Benefits</a>
+        <a href="#pricing" class="block text-dark hover:text-primary">Pricing</a>
+        <a href="#contact" class="block text-dark hover:text-primary">Contact</a>
+        <a href="https://calendly.com/" class="block bg-secondary text-white px-4 py-2 rounded-lg text-center">Book
+          Demo</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section
-      id="hero"
-      class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-gray-50 to-white"
-    >
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-10 h-[40vh] flex flex-col justify-center"
-      >
- 
-      <h1 class="text-2xl mb-5 font-bold text-gray-700">
-        Automation Without Intimidation, <span class="text-primary font-bold">Smarter Systems. Greater Freedom</span>
-      </h1>
-        <h1
-          id="hero-title"
-          class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark leading-tight mb-6"
-        >
-          Smarter Systems. <span class="text-primary">Greater Freedom</span>
+  <section id="hero" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-gray-50 to-white">
+    <div class="flex justify-center mb-6">
+      <div class="px-6 py-2 rounded-full bg-primary/10 border border-primary/20">
+        <h1 class="text-sm md:text-base font-semibold text-gray-700">
+          Automation Without Intimidation,
+          <span class="text-primary font-bold">Smarter Systems. Greater Freedom.</span>
         </h1>
-        <p
-          id="hero-subtitle"
-          class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10"
-        >
-          AI Elevates helps business owners use AI and automation to reclaim
-          time, reduce dropped balls, and run smoother operations-without
-          needing to become "tech people."
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-10 h-[40vh] flex flex-col justify-center">
+
+      <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark leading-tight mb-6">
+        Smarter Systems. <span class="text-primary">Greater Freedom</span>
+      </h1>
+      <p id="hero-subtitle" class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+        AI Elevates helps business owners use AI and automation to reclaim
+        time, reduce dropped balls, and run smoother operations-without
+        needing to become "tech people."
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#pricing"
+          class="bg-primary hover:bg-dark hover:text-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">Start
+          Free Trial</a>
+        <a href="#contact"
+          class="border-2  text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-dark hover:text-white transition">Speak
+          to an AI Expert</a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="py-24 bg-gray-100 ">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-5xl font-extrabold mb-6">About AI Elevates</h2>
+
+        <p class="text-lg text-gray-600 mb-4 font-semibold">
+          AI Elevates was created for business owners who are tired of
+          juggling everything themselves , answering every inquiry, chasing
+          leads, and managing repetitive tasks.
         </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="#pricing"
-            class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition shadow-lg"
-            >Start Free Trial</a
-          >
-          <a
-            href="#contact"
-            class="border-2  text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-secondary hover:text-white transition"
-            >Speak to an AI Expert</a
-          >
+
+        <p class="text-lg text-gray-600 mb-4 font-semibold">
+          We believe AI should feel simple, human, and invisible , not
+          overwhelming or technical.
+        </p>
+
+        <p class="text-lg text-gray-600 font-semibold">
+          Our mission is to help businesses reclaim time, reduce stress, and
+          operate more smoothly using smart, practical AI automation.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-md">
+        <h3 class="text-3xl font-extrabold text-primary mb-4">Why We Exist</h3>
+        <ul class="space-y-4 text-gray-600 text-lg font-semibold">
+          <li>✓ Eliminate missed leads and slow responses</li>
+          <li>✓ Automate conversations without losing trust</li>
+          <li>✓ Reduce operational chaos</li>
+          <li>✓ Let owners focus on growth, not busywork</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="without-ai" class="py-16 md:py-20 bg-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+          What Happens If You <span class="text-secondary">Don't</span> Use
+          AI?
+        </h2>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto font-semibold">
+          Businesses that ignore AI automation face these growing challenges
+          every day
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border-t-4 border-secondary relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-secondary/10 rounded-full -mr-12 -mt-12"></div>
+          <div
+            class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-extrabold text-dark mb-3">Lost Time</h3>
+          <p class="text-gray-600 leading-relaxed font-semibold">
+            Hours wasted on repetitive tasks that could be automated, stealing
+            precious time from growth.
+          </p>
+
+        </div>
+
+        <div
+          class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border-t-4 border-primary relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-primary/10 rounded-full -mr-12 -mt-12"></div>
+          <div
+            class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-dark mb-3 font-extrabold">Missed Revenue</h3>
+          <p class="text-gray-600 leading-relaxed font-semibold">
+            Leads slip through the cracks because there's no one to respond
+            instantly 24/7.
+          </p>
+        </div>
+
+        <div
+          class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border-t-4 border-secondary relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-secondary/10 rounded-full -mr-12 -mt-12"></div>
+          <div
+            class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-dark mb-3 font-extrabold">Burnout</h3>
+          <p class="text-gray-600 leading-relaxed font-semibold">
+            Constantly juggling everything yourself leads to exhaustion and
+            frustration.
+          </p>
+
+        </div>
+
+        <div
+          class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border-t-4 border-dark relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-dark/10 rounded-full -mr-12 -mt-12"></div>
+          <div
+            class="w-16 h-16 bg-dark rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-dark mb-3 font-extrabold">Falling Behind</h3>
+          <p class="text-gray-600 leading-relaxed font-semibold">
+            Competitors using AI are faster, more efficient, and winning your
+            customers.
+          </p>
         </div>
       </div>
-    </section>
-    <section id="about" class="py-24 bg-gray-100 ">
-      <div
-        class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center"
-      >
-        <div>
-          <h2 class="text-5xl font-bold mb-6">About AI Elevates</h2>
 
-          <p class="text-lg text-gray-600 mb-4">
-            AI Elevates was created for business owners who are tired of
-            juggling everything themselves , answering every inquiry, chasing
-            leads, and managing repetitive tasks.
-          </p>
+      <div class="text-center mt-12">
+        <p class="text-xl text-white font-semibold mb-6">
+          Don't let these problems hold your business back.
+        </p>
+        <a href="#booking"
+          class="inline-block bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">See
+          How AI Can Help</a>
+      </div>
+    </div>
+  </section>
 
-          <p class="text-lg text-gray-600 mb-4">
-            We believe AI should feel simple, human, and invisible , not
-            overwhelming or technical.
-          </p>
+  <section id="features" class="py-16 md:py-20 bg-gray-50">
+    <div class="flex justify-center mb-6">
+      <div class="px-6 py-2 rounded-full bg-primary/10 border border-primary/20">
+        <h1 class="text-sm md:text-base font-semibold text-gray-700">
+          Automation Without Intimidation —
+          <span class="text-primary font-bold">Smarter Systems. Greater Freedom.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-center text-dark mb-4">
+        What AI Elevates Does for You
+      </h2>
+      <p class="text-2xl text-gray-600 text-center mb-12 max-w-2xl mx-auto font-semibold">
+        Powerful AI tools designed to streamline your operations
+      </p>
+      <div id="features-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center"></div>
+    </div>
+  </section>
 
-          <p class="text-lg text-gray-600">
-            Our mission is to help businesses reclaim time, reduce stress, and
-            operate more smoothly using smart, practical AI automation.
+  <section id="benefits" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-center text-dark mb-4">
+        Why Businesses Choose AI Elevates
+      </h2>
+      <p class="text-2xl text-gray-600 text-center mb-12 max-w-2xl mx-auto font-semibold">
+        Real results that transform how you operate
+      </p>
+      <div id="benefits-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <section id="benefits" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Heading -->
+      <div class="text-center font-extrabold mb-14 max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-dark mb-4">
+          Benefits That Actually Matter
+        </h2>
+        <p class="text-xl text-gray-600 font-semibold">
+          Less chaos. Less dependency. More control.
+        </p>
+      </div>
+
+      <!-- Benefits Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-xl font-extrabold text-dark mb-3 ">
+            No More Firefighting
+          </h3>
+          <p class="text-gray-600 text-base font-semibold">
+            AI handles follow-ups, replies, and routine tasks so you stop reacting
+            all day.
           </p>
         </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-md">
-          <h3 class="text-3xl font-bold text-primary mb-4">Why We Exist</h3>
-          <ul class="space-y-4 text-gray-600 text-lg">
-            <li>✓ Eliminate missed leads and slow responses</li>
-            <li>✓ Automate conversations without losing trust</li>
-            <li>✓ Reduce operational chaos</li>
-            <li>✓ Let owners focus on growth, not busywork</li>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-xl font-extrabold text-dark mb-3">
+            Zero Dropped Balls
+          </h3>
+          <p class="text-gray-600 text-base font-semibold">
+            Leads, quotes, and conversations move forward automatically, nothing
+            slips through the cracks.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-xl font-extrabold text-dark mb-3">
+            Faster Response = More Revenue
+          </h3>
+          <p class="text-gray-600 text-base font-semibold">
+            Instant replies and smart routing mean prospects get answers before
+            they go elsewhere.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-xl font-extrabold text-dark mb-3">
+            Break Founder Dependency
+          </h3>
+          <p class="text-gray-600 text-base font-semibold">
+            Your business keeps running even when you’re not available 24/7.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-xl font-extrabold text-dark mb-3">
+            Calm, Predictable Operations
+          </h3>
+          <p class="text-gray-600 text-base font-semibold">
+            Replace chaos with systems that quietly do their job in the
+            background.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-xl font-extrabold text-dark mb-3">
+            Freedom to Step Away
+          </h3>
+          <p class="text-gray-600 text-base font-semibold">
+            Take time off without worrying that everything will fall apart.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="how-it-works" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-center text-dark mb-12">
+        How It Works
+      </h2>
+
+      <div class="relative">
+        <div class="hidden md:block absolute top-8 h-0.5 bg-primary/30" style="left: 16.66%; right: 16.66%"></div>
+
+        <div class="grid md:grid-cols-3 gap-8 relative z-10">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              1
+            </div>
+            <h3 class="text-2xl font-extrabold mb-2">
+              We Set Up Your AI Systems
+            </h3>
+            <p class="text-gray-600 text-lg font-semibold">
+              Our team configures everything based on your business needs.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              2
+            </div>
+            <h3 class="text-xl font-extrabold mb-2">AI Handles the Work</h3>
+            <p class="text-gray-600 text-lg font-semibold">
+              AI manages conversations, follow-ups, and booking automatically.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              3
+            </div>
+            <h3 class="text-xl font-extrabold mb-2">
+              You Focus on Growth
+            </h3>
+            <p class="text-gray-600 text-lg font-semibold">
+              While AI runs in the background, you focus on what matters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cta" class="py-16 md:py-24 gradient-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">
+        Ready to reclaim your time and simplify your business with AI?
+      </h2>
+      <p class="text-xl text-white/90 mb-10 font-semibold">Let's get started today.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://calendly.com/"
+          class="bg-secondary hover:bg-dark hover:text-white border border-2 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition">Book
+          Demo</a>
+        <a href="#pricing"
+          class="bg-secondary hover:bg-dark hover:text-white border border-2 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition">Start
+          Free Trial</a>
+        <a href="#pricing"
+          class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition">Subscription
+          Plans</a>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-5xl font-bold text-center text-dark mb-12">
+        Trusted by Business Owners
+      </h2>
+      <div id="testimonials-grid" class="flex gap-8 overflow-x-auto max-w-7xl mx-auto pb-4"></div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-center text-dark mb-4">
+        Simple, Transparent Pricing
+      </h2>
+      <p class="text-2xl text-gray-600 text-center mb-12 font-semibold">
+        Choose the plan that fits your business
+      </p>
+      <div id="pricing-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 ml-20">
+        <div class="order-2 md:order-1">
+          <h3 class="text-2xl font-bold text-primary mb-4">AI Elevates</h3>
+          <div class="flex space-x-4 mb-4 text-sm">
+            <a href="https://instagram.com/aielevates" class="text-gray-400 hover:text-primary transition">Instagram</a>
+            <a href="https://facebook.com/profile.php?id=61584199793112"
+              class="text-gray-400 hover:text-primary transition">Facebook</a>
+            <a href="https://linkedin.com/company/ai-elevates"
+              class="text-gray-400 hover:text-primary transition">LinkedIn</a>
+          </div>
+
+          <p class="text-gray-400 text-sm">
+            Helping business owners use AI <br> and automation to work smarter.
+          </p>
+        </div>
+
+        <div class="order-1 md:order-2 ml-20">
+          <h4 class="font-semibold mb-4 ">Navigation</h4>
+          <ul class="space-y-2 text-gray-400 text-sm ">
+            <li>
+              <a href="#hero" class="hover:text-primary transition">Home</a>
+            </li>
+            <li>
+              <a href="#features" class="hover:text-primary transition">Features</a>
+            </li>
+            <li>
+              <a href="#benefits" class="hover:text-primary transition">Benefits</a>
+            </li>
+            <li>
+              <a href="#pricing" class="hover:text-primary transition">Pricing</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </li>
           </ul>
         </div>
-      </div>
-    </section>
-    <section id="without-ai" class="py-16 md:py-20 bg-primary">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
-            What Happens If You <span class="text-secondary">Don't</span> Use
-            AI?
-          </h2>
-          <p class="text-xl text-gray-300 max-w-2xl mx-auto font-semibold">
-            Businesses that ignore AI automation face these growing challenges
-            every day
+
+        <div class="order-3">
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <p class="text-gray-400 text-sm mb-2">
+            Email: info@ai-elevates.com
           </p>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div
-            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border-t-4 border-secondary relative overflow-hidden"
-          >
-            <div
-              class="absolute top-0 right-0 w-24 h-24 bg-secondary/10 rounded-full -mr-12 -mt-12"
-            ></div>
-            <div
-              class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300"
-            >
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold text-dark mb-3">Lost Time</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Hours wasted on repetitive tasks that could be automated, stealing
-              precious time from growth.
-            </p>
-          
-          </div>
-
-          <div
-            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border-t-4 border-primary relative overflow-hidden"
-          >
-            <div
-              class="absolute top-0 right-0 w-24 h-24 bg-primary/10 rounded-full -mr-12 -mt-12"
-            ></div>
-            <div
-              class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300"
-            >
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold text-dark mb-3">Missed Revenue</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Leads slip through the cracks because there's no one to respond
-              instantly 24/7.
-            </p>
-          </div>
-
-          <div
-            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border-t-4 border-secondary relative overflow-hidden"
-          >
-            <div
-              class="absolute top-0 right-0 w-24 h-24 bg-secondary/10 rounded-full -mr-12 -mt-12"
-            ></div>
-            <div
-              class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300"
-            >
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold text-dark mb-3">Burnout</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Constantly juggling everything yourself leads to exhaustion and
-              frustration.
-            </p>
-         
-          </div>
-
-          <div
-            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border-t-4 border-dark relative overflow-hidden"
-          >
-            <div
-              class="absolute top-0 right-0 w-24 h-24 bg-dark/10 rounded-full -mr-12 -mt-12"
-            ></div>
-            <div
-              class="w-16 h-16 bg-dark rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300"
-            >
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold text-dark mb-3">Falling Behind</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Competitors using AI are faster, more efficient, and winning your
-              customers.
-            </p>
-          </div>
-        </div>
-
-        <div class="text-center mt-12">
-          <p class="text-xl text-white font-semibold mb-6">
-            Don't let these problems hold your business back.
-          </p>
-          <a
-            href="#booking"
-            class="inline-block bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition shadow-lg"
-            >See How AI Can Help</a
-          >
+          <p class="text-gray-400 text-sm">Phone: +1-844-628-9800</p>
         </div>
       </div>
-    </section>
-
-    <section id="features" class="py-16 md:py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-5xl font-extrabold text-center text-dark mb-4">
-          What AI Elevates Does for You
-        </h2>
-        <p class="text-2xl text-gray-600 text-center mb-12 max-w-2xl mx-auto font-semibold">
-          Powerful AI tools designed to streamline your operations
-        </p>
-        <div
-          id="features-grid"
-          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center"
-        ></div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 AI Elevates. All rights reserved.</p>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <section id="benefits" class="py-16 md:py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-5xl font-extrabold text-center text-dark mb-4">
-          Why Businesses Choose AI Elevates
-        </h2>
-        <p class="text-2xl text-gray-600 text-center mb-12 max-w-2xl mx-auto font-semibold">
-          Real results that transform how you operate
-        </p>
-        <div
-          id="benefits-grid"
-          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        ></div>
-      </div>
-    </section>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
 
-    <section id="how-it-works" class="py-16 md:py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-5xl font-extrabold text-center text-dark mb-12">
-          How It Works
-        </h2>
-
-        <div class="relative">
-          <div
-            class="hidden md:block absolute top-8 h-0.5 bg-primary/30"
-            style="left: 16.66%; right: 16.66%"
-          ></div>
-
-          <div class="grid md:grid-cols-3 gap-8 relative z-10">
-            <div class="text-center">
-              <div
-                class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4"
-              >
-                1
-              </div>
-              <h3 class="text-2xl font-extrabold mb-2">
-                We Set Up Your AI Systems
-              </h3>
-              <p class="text-gray-600 text-lg font-semibold">
-                Our team configures everything based on your business needs.
-              </p>
-            </div>
-
-            <div class="text-center">
-              <div
-                class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4"
-              >
-                2
-              </div>
-              <h3 class="text-xl font-extrabold mb-2">AI Handles the Work</h3>
-              <p class="text-gray-600 text-lg font-semibold">
-                AI manages conversations, follow-ups, and booking automatically.
-              </p>
-            </div>
-
-            <div class="text-center">
-              <div
-                class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4"
-              >
-                3
-              </div>
-              <h3 class="text-xl font-extrabold mb-2">
-                You Focus on Growth
-              </h3>
-              <p class="text-gray-600 text-lg font-semibold">
-                While AI runs in the background, you focus on what matters.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="cta" class="py-16 md:py-24 gradient-bg">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">
-          Ready to reclaim your time and simplify your business with AI?
-        </h2>
-        <p class="text-xl text-white/90 mb-10 font-semibold">Let's get started today.</p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="https://calendly.com/"
-            class="bg-secondary hover:bg-dark hover:text-white border border-2 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition"
-            >Book Demo</a
-          >
-          <a
-            href="#pricing"
-            class="bg-secondary hover:bg-dark hover:text-white border border-2 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition"
-            >Start Free Trial</a
-          >
-          <a
-            href="#pricing"
-            class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition"
-            >Subscription Plans</a
-          >
-        </div>
-      </div>
-    </section>
-    <section id="testimonials" class="py-16 md:py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-5xl font-bold text-center text-dark mb-12">
-          Trusted by Business Owners
-        </h2>
-        <div
-          id="testimonials-grid"
-          class="flex gap-8 overflow-x-auto max-w-7xl mx-auto pb-4"
-        ></div>
-      </div>
-    </section>
-
-    <section id="pricing" class="py-16 md:py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-5xl font-extrabold text-center text-dark mb-4">
-          Simple, Transparent Pricing
-        </h2>
-        <p class="text-2xl text-gray-600 text-center mb-12 font-semibold">
-          Choose the plan that fits your business
-        </p>
-        <div
-          id="pricing-grid"
-          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
-        ></div>
-      </div>
-    </section>
-
-    <footer id="contact" class="bg-dark text-white py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="order-2 md:order-1">
-            <h3 class="text-2xl font-bold text-primary mb-4">AI Elevates</h3>
-
-            <div class="flex space-x-4 mb-4 text-sm">
-              <a
-                href="https://instagram.com/aielevates"
-                class="text-gray-400 hover:text-primary transition"
-                >Instagram</a
-              >
-              <a
-                href="https://facebook.com/profile.php?id=61584199793112"
-                class="text-gray-400 hover:text-primary transition"
-                >Facebook</a
-              >
-              <a
-                href="https://linkedin.com/company/ai-elevates"
-                class="text-gray-400 hover:text-primary transition"
-                >LinkedIn</a
-              >
-            </div>
-
-            <p class="text-gray-400 text-sm">
-              Helping business owners use AI <br> and  automation to work smarter.
-            </p>
-          </div>
-
-          <div class="order-1 md:order-2">
-            <h4 class="font-semibold mb-4">Navigation</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
-              <li>
-                <a href="#hero" class="hover:text-primary transition">Home</a>
-              </li>
-              <li>
-                <a href="#features" class="hover:text-primary transition"
-                  >Features</a
-                >
-              </li>
-              <li>
-                <a href="#benefits" class="hover:text-primary transition"
-                  >Benefits</a
-                >
-              </li>
-              <li>
-                <a href="#pricing" class="hover:text-primary transition"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a href="#contact" class="hover:text-primary transition"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="order-3">
-            <h4 class="font-semibold mb-4">Contact</h4>
-            <p class="text-gray-400 text-sm mb-2">
-              Email: info@ai-elevates.com
-            </p>
-            <p class="text-gray-400 text-sm">Phone: +1-844-628-9800</p>
-          </div>
-        </div>
-        <div
-          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm"
-        >
-          <p>&copy; 2026 AI Elevates. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="config.js"></script>
-    <script src="app.js"></script>
-  </body>
 </html>
